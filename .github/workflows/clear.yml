@@ -1,8 +1,9 @@
 name: 每周删除提交记录
 on:
   workflow_dispatch:
-  schedule:
-    - cron: '0 2 * * 1'
+  #schedule:
+    #- cron: '0 2 * * 1' # Runs at 02:00, only on Monday. using UTC time
+
 jobs:
   build:
     runs-on: ubuntu-latest
